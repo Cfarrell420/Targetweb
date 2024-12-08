@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        <!-- replace this with your own head tag stuff-->
+		<title>About Us</title><!--ADD!!!!!!!!!!-->
+		
+		<!--DENISE (HEAD LINKS)-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+		<link href="primary.css" rel="stylesheet"><!--below bootstrap link-->
+		<script type="text/javascript" src="external.js"></script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta charset="utf-8">
+		
+		<!--keywords for search engines-->
+		<meta name="keywords" content="Targets, Poverty, SDG, Sustainability, UN"><!--ADD!!!!!!!!!!-->
+		
+		<meta name="author" content="Cian Farrell"><!--enter name--><!--ADD!!!!!!!!!!-->
+		
+		<meta name="description" content = "A simple webpage about the people who made this webpage! "><!--ADD!!!!!!!!!!-->
+		
+    </head>
+    
+    <body>
+        <nav> <!-- header & navigation bar @Daniel Shlusaver-->
+            <div id="nav-logo-container"> <!-- custom div needed for full width bg colour change -->
+                <div class="container p-3"> <!-- bootstrap container to limit content width -->
+                    <div class="container d-flex align-items-center justify-content-center">
+                        <img id="emblem" src="images/emblem.png" alt="Sustainable Development Goal 1 Emblem Logo"> <!-- logo emblem -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="nav-pills-container">
+                <div class="container" id="nav-pills">
+                    <header class="d-flex justify-content-center py-3">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a href="index.html" class="nav-link button-text">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link button-text" aria-current="page">About</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                            <li class="nav-item"><a href="faq.html" class="nav-link button-text">FAQ</a></li>
+                            <li class="nav-item"><a href="targets.html" class="nav-link button-text">Targets</a></li>
+                            <li class="nav-item"><a href="takeaction.html" class="nav-link button-text">Take Action</a></li>
+                        </ul>
+                    </header>
+                </div>
+            </div>
+
+            <div class="divider-bar"></div>
+        </nav>
+        
+        <main> <!-- main tag where all the content of the page will go -->
+		
+          <h1>Who are we?</h1>
+			<p id="p1">We are a charitable organisation dedicated to fighting for underpriveleged peoples across the globe, based in Dublin, Ireland our mission statement is clear, solve the economic injustice and inequality found in the world today,We provide shelter,food and clothing to those in need and will not stop until the issues are solved.</p>
+		  <h1>what are the sustainable development goals?</h1>
+			<p id="p2">The sustainable development goals were a set of goals agreed upon by all un member states in 2015, these goals were a mix of objectives to help solve the current inequaloty, financial and enviromental crises facing the world currently. These goals are aimed to be hit by 2030, </p>
+		 <h1>No Poverty</h1>
+			<p id="p3">Poverty is a very prevalent issue in todays world especially in ireland where 14,000 people are estimated to be homeless and living in emergency accomadation and roughly 150 million people worldwide being homeless, this is a clear issue in the world today as the wealth gap between the 1% and and the rest of us grows along with inflation , rising rents and a general scarcity of houses in the world there is a duty among our leaders to solve this issue before it gets out of hand.</p>
+		 <input type="button" value="Hide text" 
+			onclick="document.getElementById('p1').style.visibility='hidden'">
+
+		<input type="button" value="Show text"
+			onclick="document.getElementById('p1').style.visibility='visible'">
+			<input type="button" value="Hide text" 
+			onclick="document.getElementById('p2').style.visibility='hidden'">
+
+		<input type="button" value="Show text"
+			onclick="document.getElementById('p2').style.visibility='visible'">
+			<input type="button" value="Hide text" 
+			onclick="document.getElementById('p3').style.visibility='hidden'">
+
+		<input type="button" value="Show text"
+			onclick="document.getElementById('p3').style.visibility='visible'">
+		 <div class="aboutx">					 
+			<!--creates a flex box which is used to hold 2 other flexboxes inside-->
+				<div class="abouty">
+					<img src="images/CAabout1.jpg" alt="an image of the NCI Campus">
+					<img src="images/CAabout2.jpg" alt="an image of the NCI Logo">
+			</div>
+				<div class="aboutz">
+					<img src="images/CAabout3.jpg" alt="UN Logo">
+					<img src="images/CAabout4.jpg" alt="An image of all sdgs">
+				</div>
+		</div>
+				<h1>Would you like to volunteer to help us reach our goals?</h1>
+			<form name="myForm" onsubmit="return validateForm()"> <!-- creates a form and calls the Validateform() function to validate it-->
+			  <div class="form-group">
+				<label for="exampleInputName1">Name</label>
+				<input type="text" class="form-control" name="name" id="exampleInputName1" placeholder="text">
+			  </div>
+			  <div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="text" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			  </div>
+			  <div class="form-group">
+				<label for="exampleInputAddress1">Address</label>
+				<input type="text" class="form-control" id="exampleInputAddress1" name="address" placeholder="text">
+			  </div>
+			  <div class="form-check">
+				<input type="checkbox" class="form-check-input" name="check" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Do you accept the Terms and Conditions?</label>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+	   </main>
+		
+
+        <footer class="text-center text-white"> <!-- DENISE (FOOTER) -->
+			<div class="container"> <!-- Grid container -->
+				<section class="mt-5"> <!-- Section for links -->
+					<div class="row text-center d-flex justify-content-center pt-5"> <!-- Grid row-->
+						<div class="col-md-2"> <!-- Grid column -->
+							<h6 class="text-uppercase font-weight-bold">
+								<a href="about.html" class="text-white">About Us</a>
+							</h6>
+						</div>
+
+						<div class="col-md-2"> <!-- Grid column -->
+							<h6 class="text-uppercase font-weight-bold">
+								<a href="contact.html" class="text-white">Contact Us</a>
+							</h6>
+						</div> <!-- END OF Grid column -->
+
+						<div class="col-md-2"> <!-- Grid column -->
+							<h6 class="text-uppercase font-weight-bold">
+								<a href="#!" class="text-white">Privacy Policy</a>
+							</h6>
+						</div> <!-- END OF Grid column -->
+			
+						<div class="col-md-2"> <!-- Grid column -->
+							<h6 class="text-uppercase font-weight-bold">
+								<a href="faq.html" class="text-white">FAQ</a>
+							</h6>
+						</div> <!-- END OF Grid column -->
+					</div> <!-- END OF Grid row-->
+				</section> <!-- END OF Section: Links -->
+
+				<hr class="mt-5"> <!--horizontal line-->
+
+				<section class="mb-5"> <!-- Section: Text OPTIONAL!!!! -->
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-8">
+							<p>One step forward. Together, we can make a difference. Join the global effort to end poverty In all its form by 2030. Lets work to create a world where everyone is equal.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="mb-4"> <!-- Section: Social -->
+					<!-- Facebook -->
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-facebook" href="#!" role="button">
+						<i class="fa fa-facebook-f"></i>
+					</a>
+					
+					<!-- Twitter -->
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-twitter" href="#!" role="button">
+						<i class="fa fa-twitter"></i>
+					</a>
+
+					<!-- Youtube -->
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-youtube" href="#!" role="button">
+						<i class="fa fa-youtube"></i>
+					</a>
+
+					<!-- Instagram -->
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-instagram" href="#!" role="button">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</section>
+			</div> <!-- Grid container -->
+			
+			<!-- Copyright -->
+			<div class="text-center p-3">© 2024 Copyright: No Poverty - SDG 1</div>
+		</footer> <!-- DENISE (END OF FOOTER) --> 
+    </body>
+</html>
